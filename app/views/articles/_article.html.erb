@@ -1,0 +1,22 @@
+<div id="<%= dom_id article %>">
+  <p>
+    <strong>Title:</strong>
+    <%= article.title %>
+  </p>
+
+  <br>
+
+  <p>
+    <strong>Body:</strong>
+    <%= article.body %>
+  </p>
+
+  <br>
+
+  <%= image_tag(article.image) %>
+
+</div>
+
+<br>
+
+<%= link_to "Back to All Articles", articles_path %>
