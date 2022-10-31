@@ -13,7 +13,7 @@
 
   <br>
 
-  <% if !article.image.nil?%>
+  <% if article.image.attached? %>
     <%= image_tag(article.image) %>
   <% else %>
     <p> No image attached to this post. </p>
