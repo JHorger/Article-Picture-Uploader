@@ -22,8 +22,14 @@
   </div>
 
   <div>
-  <%= form.label :image %>
-  <%= form.file_field :image %>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </div>
 
   <div>
     <%= form.submit %>
