@@ -70,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'aws-sdk'
+
+gem 'aws-sdk-s3'
+
+gem "dotenv-rails", "~> 2.8"
