@@ -16,20 +16,28 @@
     <%= form.text_field :title %>
   </div>
 
+  <br>
+
   <div>
     <%= form.label :body, style: "display: block" %>
     <%= form.text_area :body %>
   </div>
+
+  <br>
 
   <div>
     <%= form.label :image %>
     <%= form.file_field :image %>
   </div>
 
+  <br>
+
   <div>
     <%= form.label :status %><br>
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
   </div>
+
+  <br>
 
   <div>
     <%= form.submit %>
